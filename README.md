@@ -6,7 +6,10 @@
 - Run bundler to install dependencies. Follow the instructions to install any that are missing and not automatically installed. 
 - set up your tables as follows:
 - enter ```# psql postgresql``` in the terminal:
-- once in postgresql, enter the info found in db/migrations/01_create_databases.sql (as individual entries). This will create the databases
+- You should now see something like the following:<br>
+ ```psql (14.4)```<br>
+ ```Type "help" for help.```
+- once in psql, enter the info found in db/migrations/01_create_databases.sql (as individual entries). This will create the databases
 - then navigate to each database with ```# \c makersbnb``` and ```# \c makersbnb_test```, and once inside each one, enter all the info found in db/migrations/02_create_tables.sql (as individual entries). This will create the tables for the user experience and for testing. The information should be the same in both databases.  
 - start up the server with ```$ rackup config.ru``` or ```$ rackup -p 3000```
 - navigate to the relevant localhost address, either ```localhost:9292``` or ```localhost:3000```, depending on the above choice
