@@ -2,7 +2,7 @@
 
 ## Instructions for using the app
 
-- Clone this repo
+- Start by cloning this repo
 - Run bundler to install dependencies. Follow the instructions to install any that are missing and not automatically installed. 
 - set up your tables as follows:
 - enter <code># psql postgresql<code> in the terminal:
