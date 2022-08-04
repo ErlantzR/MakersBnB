@@ -2,18 +2,19 @@
 
 ## Instructions for using the app
 
-- Start by cloning this repo
-- Run bundler to install dependencies. Follow the instructions to install any that are missing and not automatically installed. 
-- set up your tables as follows:
-- enter <code># psql postgresql<code> in the terminal:
-- once in postgresql, enter the info found in db/migrations/01_create_databases.sql (as individual entries). This will create the databases
-- then navigate to each database with <code># \c makersbnb<code> and <code># \c makersbnb_test<code>, and once inside each one, enter all the info found in db/migrations/02_create_tables.sql (as individual entries). This will create the tables for the user experience and for testing. The information should be the same in both databases.  
-- start up the server with <code>$ rackup config.ru<code> or <code>$ rackup -p 3000<code>
-- navigate to the relevant localhost address, either localhost:9292 or localhost:3000, depending on the above choice
-- to enter information, follow the instructions on the page
-- to view the info in the databases, navigate to the you wish to view database, then enter <code># \dt<code> to view all tables.
-- to view a specific table, e.g. spaces, enter SELECT * FROM spaces
-- to run tests, run rspec
+1. Start by cloning this repo
+2. Run bundler to install dependencies. Follow the instructions to install any that are missing and not automatically installed. 
+3. set up your tables as follows:
+4. enter <code># psql postgres<code> in the terminal:
+5. once in postgresql, enter the info found in db/migrations/01_create_databases.sql (as individual entries). This will create the databases.
+6. navigate to the database with <code># \c makersbnb<code> and enter all the info found in db/migrations/02_create_tables.sql. This will create the tables for the user experience.
+7. navigate to the test database with <code># \c makersbnb_test<code> and again enter all the info found in db/migrations/02_create_tables.sql. This will create the tables for testing. 
+8. start up the server with <code>$ rackup<code>
+9. navigate to the relevant localhost address, which should be visible in the CLI. 
+10. Use the website.
+11. to view the info in the databases, navigate to the database you wish to view, then enter <code># \dt<code> to view all tables.
+12. to view a specific table, e.g. spaces, enter SELECT * FROM spaces
+13. to run tests, run rspec
 
 ## Specification
 
