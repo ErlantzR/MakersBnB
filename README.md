@@ -13,7 +13,7 @@
 9. navigate to the relevant localhost address, which should be visible in the CLI. 
 10. Use the website.
 11. to view the info in the databases, navigate to the database you wish to view, then enter ```# \dt``` to view all tables.
-12. to view a specific table, e.g. spaces, enter ```SELECT * FROM``` spaces
+12. to view a specific table, e.g. spaces, enter ```SELECT * FROM spaces```
 13. to run tests, run rspec
 
 ## Specification
